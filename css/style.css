@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #3fbfdc;
+  width: 100vw;
+  height: auto;
+  padding: 25px; }
+  .header .contact-div {
+    display: flex; }
+    .header .contact-div .contact {
+      text-decoration: underline; }
+    .header .contact-div .arrow {
+      color: #ffffff00;
+      margin-left: 2px;
+      font-size: 1rem; }
+  .header .logo {
+    display: flex; }
+    .header .logo .seed {
+      font-size: 1.5rem; }
+    .header .logo .name-logo {
+      font-size: 1.5rem; }
+  .header .sh-car {
+    font-size: 1.56rem;
+    cursor: pointer;
+    transition: 0.4s; }
+    .header .sh-car:hover {
+      opacity: 0.5; }
+
+@media screen and (min-width: 600px) {
+  .header .logo .seed, .header .logo .name-logo {
+    font-size: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */
