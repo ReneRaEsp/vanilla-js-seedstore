@@ -1,42 +1,81 @@
 .section3
     display: flex
-    justify-content: space-around
-    flex-direction: column
     flex-wrap: wrap
-    background: #23b748dc
-    width: 100vw
-    height: auto
-    padding: 10px
-    .subtitle2
-        text-align: center
-        margin: auto
-        margin-top: 2rem
-        margin-bottom: 1rem
-        margin-right: 12rem
-        margin-left: 12rem
-    hr
-        border: 1.5px solid #000
-        background: #000
-        width: 12rem
-        margin: auto
-    .gallery2
+    justify-content: center
+    .pre-gallery2
         display: flex
-        justify-content: space-evenly
-        align-items: center
-        align-content: space-between
+        justify-content: center
         flex-wrap: wrap
         flex-direction: column
-        margin-top: .7rem
-        padding: 10px
-        background: #00000000
-        width: 100%
+        align-items: center
+        width: 100vw
+        height: 20vh
+        background: #35cd5925
+        .subtitle2
+        hr
+            border: 1.5px solid #000
+            width: 7rem
+            background: #000
+            margin-top: .6rem
+    .gallery2
+        width: 100vw
         height: auto
+        background: #a0299204
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        padding: 12px
         .card
+            display: flex
+            justify-content: center
+            flex-direction: column
             width: 15rem
-            height: 15rem
-            margin: 1.4rem
-            border-radius: 4px
-            background: #59e6c1
+            height: auto
+            background: #00000000
+            margin: 2rem
             .article-img
+                width: 15rem
+                height: 15rem
             .article-title
+                margin-top: .6rem
             .article-price
+                margin-top: .6rem
+                font-size: .9rem
+            .btn
+                border: 2px solid #51cfc9a8
+                background: #39a174
+                padding: 10px
+                font-weight: bold
+                width: 90%
+                border-radius: 12px
+                margin-top: .75rem
+                margin-bottom: .75rem
+                color: white
+                display: flex
+                justify-content: center
+                align-self: center
+                cursor: pointer
+                transition: .7s
+                &:hover
+                    opacity: .7
+                    background: #398ea1
+    .categories
+        display: flex
+        justify-content: center
+        width: 100vw
+        height: auto
+        padding: 10px
+        background: #1297a8a2
+        .links
+            display: flex
+            justify-content: space-evenly
+            flex-wrap: wrap
+            .link
+                margin: 2rem
+                color: white
+                font-size: 1.2rem
+                transition: 1s
+                cursor: pointer
+                &:hover
+                    text-decoration: underline
+    
