@@ -52,7 +52,7 @@
     <!--Caroucel-->
     <section class="caroucel">
         <i onclick="goBack()" class="left-arrow fas fa-arrow-circle-left"></i>
-        <div class="slide1 slide">
+        <div loading="lazy" class="slide1 slide">
             <div class="text text1">
                 <h1 class="title">Buy seeds online for your garden</h1>
                 <p class="paragraph">
@@ -60,7 +60,7 @@
                 </p>
             </div>
         </div>
-        <div class="slide2 slide">
+        <div  loading="lazy" class="slide2 slide">
             <div class="text text2">
                 <h1 class="title">Ornamental plants</h1>
                 <p class="paragraph">
@@ -68,7 +68,7 @@
                 </p>
             </div>
         </div>
-        <div class="slide3 slide">
+        <div  loading="lazy" class="slide3 slide">
             <div class="text text3">
                 <h1 class="title">Lorem ipsum</h1>
                 <p class="paragraph">
@@ -104,17 +104,17 @@
         <h2 class="subtitle1">Shop By Category</h2>
         <hr>
         <div class="gallery">
-            <div class="seeds card">
+            <div  loading="lazy" class="seeds card">
                 <a href="#" class="band">
                     Seeds
                 </a>
             </div>
-            <div class="plants card">
+            <div  loading="lazy" class="plants card">
                 <a href="#" class="band">
                     Plants
                 </a>
             </div>
-            <div class="services card">
+            <div  loading="lazy" class="services card">
                 <a href="#" class="band">
                     Services
                 </a> 
@@ -130,56 +130,126 @@
         </div>
         <div class="categories">
             <div class="links">
-                <p class="link">Seeds</p>
-                <p class="link">Plants</p>
-                <p class="link">Services</p>
+                <p id="seeds" onclick="showGallery2()" class="link">Seeds</p>
+                <p id="plants" onclick="showGallery1()" class="link">Plants</p>
+                <p id="services" onclick="showGallery3()" class="link">Services</p>
             </div>
         </div>
-        <div class="gallery2">
+        <div id="gallery-1" class="gallery2">
             <div class="card">
-                <img class="article-img" src="img/plantas/p1.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p1.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p2.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p2.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p3.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p3.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p4.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p4.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p5.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p5.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p6.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p6.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p7.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p7.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
             </div>
             <div class="card">
-                <img class="article-img" src="img/plantas/p8.jpg" alt="">
+                <img  loading="lazy" class="article-img" src="img/plantas/p8.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+        </div>
+        <div id="gallery-2" class="gallery2 g-seeds">
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/s1.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/s2.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/s3.jpg" alt="">
+                <h3 loading="lazy" class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img loading="lazy" class="article-img" src="img/plantas/s4.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img loading="lazy" class="article-img" src="img/plantas/s5.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+        </div>
+        <div id="gallery-3" class="gallery2 g-seeds">
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/pj1.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/pj2.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img  loading="lazy" class="article-img" src="img/plantas/pj3.jpg" alt="">
+                <h3 loading="lazy" class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img loading="lazy" class="article-img" src="img/plantas/pj4.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img loading="lazy" class="article-img" src="img/plantas/pj5.jpg" alt="">
+                <h3 class="article-title">Article 1</h3>
+                <h2 class="article-price">$8.00</h2>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img loading="lazy" class="article-img" src="img/plantas/pj6.jpg" alt="">
                 <h3 class="article-title">Article 1</h3>
                 <h2 class="article-price">$8.00</h2>
                 <button class="btn">Agregar al carrito</button>
@@ -201,6 +271,7 @@
     <script src="js/show-menu.js">
     </script>
     <script src="js/caroucel.js"></script>
+    <script src="js/categories.js"></script>
     <!--End of scripts-->
 </body>
 </html>
