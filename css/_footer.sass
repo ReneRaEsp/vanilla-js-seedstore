@@ -1,0 +1,74 @@
+.footer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    flex-direction: column
+    width: 100vw
+    height: auto
+    background: rgba(113, 113, 153, .9)
+    .up
+        display: flex
+        flex-wrap: wrap
+        width: 100vw
+        height: auto
+        background: rgba(41, 86, 85, 0.612)
+        .store-info
+            width: 66vw
+            height: 40vh
+            background: #cb6e270b
+            padding: 25px
+            .store-title
+                color: white
+                font-size: 1.45rem
+            .address, .tel, .email
+                color: white
+                margin-top: 2rem
+                display: flex
+                justify-content: flex-start
+                flex-wrap: nowrap
+                p
+                    margin-left: 5px
+        .information
+            width: 0vw
+            height: 40vh
+            background: #0c5e18a3
+        .social
+            width: 33vw
+            height: 40vh
+            background: #e4ab8000
+            padding: 25px
+            h3
+                color: white
+                font-size: 1.45rem
+            .icons
+                display: flex
+                justify-content: space-evenly
+                margin-top: 2rem
+                color: white
+                font-size: 2rem
+                width: 40%
+                i
+                    transition: .7s
+                    cursor: pointer
+                    &:hover
+                        opacity: .5
+    .copyright
+        display: flex
+        justify-content: center
+        background: #0e6588
+        width: 100vw
+        height: 10vh
+        h3
+            margin-top: 1.5rem
+            color: #ffffffc1
+            a
+                text-decoration: none
+                color: #65b5e6
+
+@media screen and (max-width: 700px)
+    .footer
+        .up
+            .store-info
+                width: 100vw
+            .social
+                width: 100vw

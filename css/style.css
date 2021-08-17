@@ -333,4 +333,77 @@ body {
   .section3 .g-seeds {
     display: none; }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  background: rgba(113, 113, 153, 0.9); }
+  .footer .up {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background: rgba(41, 86, 85, 0.612); }
+    .footer .up .store-info {
+      width: 66vw;
+      height: 40vh;
+      background: #cb6e270b;
+      padding: 25px; }
+      .footer .up .store-info .store-title {
+        color: white;
+        font-size: 1.45rem; }
+      .footer .up .store-info .address, .footer .up .store-info .tel, .footer .up .store-info .email {
+        color: white;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap; }
+        .footer .up .store-info .address p, .footer .up .store-info .tel p, .footer .up .store-info .email p {
+          margin-left: 5px; }
+    .footer .up .information {
+      width: 0vw;
+      height: 40vh;
+      background: #0c5e18a3; }
+    .footer .up .social {
+      width: 33vw;
+      height: 40vh;
+      background: #e4ab8000;
+      padding: 25px; }
+      .footer .up .social h3 {
+        color: white;
+        font-size: 1.45rem; }
+      .footer .up .social .icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        color: white;
+        font-size: 2rem;
+        width: 40%; }
+        .footer .up .social .icons i {
+          transition: 0.7s;
+          cursor: pointer; }
+          .footer .up .social .icons i:hover {
+            opacity: 0.5; }
+  .footer .copyright {
+    display: flex;
+    justify-content: center;
+    background: #0e6588;
+    width: 100vw;
+    height: 10vh; }
+    .footer .copyright h3 {
+      margin-top: 1.5rem;
+      color: #ffffffc1; }
+      .footer .copyright h3 a {
+        text-decoration: none;
+        color: #65b5e6; }
+
+@media screen and (max-width: 700px) {
+  .footer .up .store-info {
+    width: 100vw; }
+  .footer .up .social {
+    width: 100vw; } }
+
 /*# sourceMappingURL=style.css.map */
