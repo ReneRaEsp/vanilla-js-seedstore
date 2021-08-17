@@ -251,4 +251,44 @@ body {
     .section2 .gallery .services {
       background-image: url("../img/paisajismo.jpg"); }
 
+.section3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #23b748dc;
+  width: 100vw;
+  height: auto;
+  padding: 10px; }
+  .section3 .subtitle2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 12rem;
+    margin-left: 12rem; }
+  .section3 hr {
+    border: 1.5px solid #000;
+    background: #000;
+    width: 12rem;
+    margin: auto; }
+  .section3 .gallery2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0.7rem;
+    padding: 10px;
+    background: #00000000;
+    width: 100%;
+    height: auto; }
+    .section3 .gallery2 .card {
+      width: 15rem;
+      height: 15rem;
+      margin: 1.4rem;
+      border-radius: 4px;
+      background: #59e6c1; }
+
 /*# sourceMappingURL=style.css.map */
