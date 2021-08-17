@@ -1,5 +1,55 @@
 .caroucel
-    .slide1
-        background: #29bb8d
+    display: flex
+    .slide
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-size: cover
         width: 100vw
-        height: 40vh
+        height: 70vh
+        .text
+            background: #0000006b
+            text-align: center
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            padding: 30px
+            transition: .5s
+            opacity: 1
+            .title
+                transition: .4s
+                font-size: 3rem
+            .paragraph
+                font-size: 1rem
+    .slide3
+        background-image: url('../img/slider3.jpg')
+    .slide2
+        display: none
+        background-image: url('../img/slider2.jpg')
+    .slide1
+        display: none
+        background-image: url('../img/slider1.jpg')
+    .left-arrow, .right-arrow
+        position: absolute
+        display: flex
+        align-self: center
+        font-size: 2rem
+        opacity: .5
+        transition: .5s
+        &:hover
+            opacity: 1
+            cursor: pointer
+    .left-arrow
+        left: 17px
+        color: white
+    .right-arrow
+        right: 17px
+        color: white
+
+.title
+    color: white
+
+.paragraph
+    color: white
