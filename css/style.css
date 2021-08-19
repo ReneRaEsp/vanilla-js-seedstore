@@ -43,6 +43,86 @@ body {
 @media screen and (min-width: 600px) {
   .header .logo .seed, .header .logo .name-logo {
     font-size: 2rem; } }
+#sh-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 4;
+  background: #ffffffd5;
+  width: 70vw;
+  height: auto;
+  max-height: 80vh;
+  right: -70vw;
+  transition: 1s;
+  overflow: auto; }
+  #sh-car .top {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10%;
+    background: #cc505000; }
+    #sh-car .top i {
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.7s; }
+      #sh-car .top i:hover {
+        color: #ef3f3f; }
+  #sh-car .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: #abb92a00; }
+    #sh-car .bottom .card {
+      display: flex;
+      justify-content: flex-start;
+      margin: 10px;
+      width: 20rem;
+      height: 40%;
+      background: #c4cafaa8;
+      border: 2px solid #000;
+      padding: 2px; }
+      #sh-car .bottom .card .article-img {
+        width: 30%;
+        height: 35%; }
+      #sh-car .bottom .card .data {
+        width: 70%;
+        display: flex;
+        padding: 12px;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #c9353500; }
+        #sh-car .bottom .card .data .article-title {
+          text-align: left;
+          display: flex;
+          align-self: flex-start;
+          font-size: 1.5rem; }
+        #sh-car .bottom .card .data .article-price {
+          text-align: left;
+          font-size: 1.2rem;
+          margin-top: 2rem;
+          display: flex;
+          justify-self: flex-start;
+          align-self: flex-start; }
+      #sh-car .bottom .card i {
+        display: flex;
+        align-self: flex-start;
+        justify-self: flex-end;
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: white;
+        transition: 0.7s;
+        height: 1.6rem;
+        margin-top: 1px;
+        margin-right: 1px; }
+        #sh-car .bottom .card i:hover {
+          color: #ef3333d5; }
+
 .menu {
   display: flex;
   justify-content: center;
@@ -374,14 +454,16 @@ body {
       padding: 25px; }
       .footer .up .social h3 {
         color: white;
-        font-size: 1.45rem; }
+        font-size: 1.45rem;
+        margin: auto;
+        text-align: center; }
       .footer .up .social .icons {
         display: flex;
         justify-content: space-evenly;
         margin-top: 2rem;
         color: white;
         font-size: 2rem;
-        width: 40%; }
+        width: 90%; }
         .footer .up .social .icons i {
           transition: 0.7s;
           cursor: pointer; }
