@@ -11,6 +11,7 @@ const addToCar = (article)=>{
     amountCount++;
     if(articleAdd.querySelector('.article-append')){
         let element = {
+            id: article,
             name: articleAdd.querySelector('.article-title').innerHTML,
             img: articleAdd.querySelector('.article-img').src,
             price: prepPrice,
@@ -20,6 +21,7 @@ const addToCar = (article)=>{
         shoppingCar.push(element);
     }else{
         let element = {
+            id: article,
             name: articleAdd.querySelector('.article-title').innerHTML,
             img: articleAdd.querySelector('.article-img').src,
             price: articleAdd.querySelector('.article-price').innerHTML,
@@ -37,7 +39,7 @@ function agregarArticulo(e){
     };
 };
 
-function addArticleToList(title_a, price_a, img_src_a){
+function addArticleToList(title_a, price_a, img_src_a, id){
     //Declarations
     //Nodes
     let card = document.createElement('div');
@@ -69,10 +71,15 @@ function addArticleToList(title_a, price_a, img_src_a){
     //icon
     icon.classList.add('fas');
     icon.classList.add('fa-minus-square');
+    icon.addEventListener('click', function(){
+        removeArticle(id);
+    });
 
     //Data's appends
     data.appendChild(article_title);
     data.appendChild(article_price);
+
+    card.id = id;
 
     card.appendChild(image);
 
@@ -88,8 +95,13 @@ function addArticleToList(title_a, price_a, img_src_a){
 function clearAndListArticles(){
     articlesList.innerHTML = '';
     shoppingCar.forEach(article=>{
-        addArticleToList(article.name, article.price, article.img);
+        addArticleToList(article.name, article.price, article.img, article.id);
     });
+};
+
+function removeArticle(id){
+    let articleToRemove = document.getElementById(id);
+    articleToRemove.remove();
 };
 
 
