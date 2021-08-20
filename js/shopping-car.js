@@ -32,13 +32,6 @@ const addToCar = (article)=>{
     clearAndListArticles();
 };
 
-function agregarArticulo(e){
-    e.preventDefault();
-    if(e.target.classList.contains('btn')){
-        console.log(e.target.parentElement);
-    };
-};
-
 function addArticleToList(title_a, price_a, img_src_a, id){
     //Declarations
     //Nodes
@@ -104,4 +97,11 @@ function removeArticle(id){
     articleToRemove.remove();
 };
 
-
+//Event Listeners
+let cards = document.querySelectorAll('.article-card');
+cards.forEach(card=>{
+    let id = card.id;
+    card.addEventListener('click', function(){
+        addToCar(id);
+    });
+});

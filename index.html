@@ -29,9 +29,6 @@
     <!--End of header-->
     <!--Shopping Car-->
     <div onmouseout="hideCar()" onmouseover="showCar()" id="sh-car" class="shopping-car">
-        <!--<div class="top">
-            <i onclick="hideCar()" class="fas fa-window-close"></i>
-        </div>-->
         <div id="articlesList" class="bottom">
            <!--<div class="card">
                 <img  loading="lazy" class="article-img" src="img/plantas/p8.jpg" alt="">
@@ -44,6 +41,10 @@
             <h3 class="article-title">
                 The shopping car is empty
             </h3>
+        </div>
+        <div class="top">
+            <h2>Total: <span id="total">400$</span></h2>
+            <button class="buy">Buy</button>
         </div>
     </div>
     <!--End of shopping car-->
@@ -158,129 +159,129 @@
             </div>
         </div>
         <div id="gallery-1" class="gallery2">
-            <div id="p1" class="card">
+            <div id="p1" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p1.jpg" alt="">
                 <h3 class="article-title">Aloe Aristata</h3>
                 <h2 class="article-price">$3.00</h2>
-                <button onclick="addToCar('p1')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p2" class="card">
+            <div id="p2" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p2.jpg" alt="">
                 <h3 class="article-title">Cactus</h3>
                 <h2 class="article-price">$4.00</h2>
-                <button onclick="addToCar('p2')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p3" class="card">
+            <div id="p3" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p3.jpg" alt="">
                 <h3 class="article-title">Cactus</h3>
                 <h2 class="article-price">$5.00</h2>
-                <button onclick="addToCar('p3')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p4" class="card">
+            <div id="p4" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p4.jpg" alt="">
                 <h3 class="article-title">Aloe Variegata</h3>
                 <h2 class="article-price">$6.00</h2>
-                <button onclick="addToCar('p4')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p5" class="card">
+            <div id="p5" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p5.jpg" alt="">
                 <h3 class="article-title">Aloe saporina</h3>
                 <h2 class="article-price">$5.00</h2>
-                <button onclick="addToCar('p5')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p6" class="card">
+            <div id="p6" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p6.jpg" alt="">
                 <h3 class="article-title">Cactus</h3>
                 <h2 class="article-price">$4.00</h2>
-                <button onclick="addToCar('p6')" class="btn">Add to shopping cart</button>
+                <button class="btn">Add to shopping cart</button>
             </div>
-            <div id="p7" class="card">
+            <div id="p7" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p7.jpg" alt="">
                 <h3 class="article-title">Flowering cactus</h3>
                 <h2 class="article-price">$8.00</h2>
-                <button onclick="addToCar('p7')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="p8" class="card">
+            <div id="p8" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/p8.jpg" alt="">
                 <h3 class="article-title">Ornamental plant</h3>
                 <h2 class="article-price">$10.00</h2>
-                <button onclick="addToCar('p8')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
         </div>
         <div id="gallery-2" class="gallery2 g-seeds">
-            <div id="s1" class="card">
+            <div id="s1" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/s1.jpg" alt="">
                 <h3 class="article-title">Seeds</h3>
                 <h2 class="article-price">$3.00</h2>
-                <button onclick="addToCar('s1')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="s2" class="card">
+            <div id="s2" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/s2.jpg" alt="">
                 <h3 class="article-title">Seeds combo</h3>
                 <h2 class="article-price">$8.00</h2>
-                <button onclick="addToCar('s2')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="s3" class="card">
+            <div id="s3" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/s3.jpg" alt="">
                 <h3 loading="lazy" class="article-title">Sunflower Seeds</h3>
                 <h2 class="article-price">$2.00</h2>
-                <button onclick="addToCar('s3')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="s4" class="card">
+            <div id="s4" class="card article-card ">
                 <img loading="lazy" class="article-img" src="img/plantas/s4.jpg" alt="">
                 <h3 class="article-title">Dried fruit combo</h3>
                 <h2 class="article-price">$7.00</h2>
-                <button onclick="addToCar('s4')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="s5" class="card">
+            <div id="s5" class="card article-card ">
                 <img loading="lazy" class="article-img" src="img/plantas/s5.jpg" alt="">
                 <h3 class="article-title">Seeds combo</h3>
                 <h2 class="article-price">$8.00</h2>
-                <button onclick="addToCar('s5')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
         </div>
         <div id="gallery-3" class="gallery2 g-seeds">
-            <div id="pj1" class="card">
+            <div id="pj1" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/pj1.jpg" alt="">
                 <h3 class="article-title">Plant path</h3>
                 <h2 class="article-price">$49.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj1')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="pj2" class="card">
+            <div id="pj2" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/pj2.jpg" alt="">
                 <h3 class="article-title">Garden with fountain and waterfalls</h3>
                 <h2 class="article-price">$78.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj2')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="pj3" class="card">
+            <div id="pj3" class="card article-card ">
                 <img  loading="lazy" class="article-img" src="img/plantas/pj3.jpg" alt="">
                 <h3 loading="lazy" class="article-title">Garden with rocks</h3>
                 <h2 class="article-price">$38.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj3')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="pj4" class="card">
+            <div id="pj4" class="card article-card ">
                 <img loading="lazy" class="article-img" src="img/plantas/pj4.jpg" alt="">
                 <h3 class="article-title">Plant path plus red</h3>
                 <h2 class="article-price">$54.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj4')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="pj5" class="card">
+            <div id="pj5" class="card article-card ">
                 <img loading="lazy" class="article-img" src="img/plantas/pj5.jpg" alt="">
                 <h3 class="article-title">Garden with pond</h3>
                 <h2 class="article-price">$68.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj5')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
-            <div id="pj6" class="card">
+            <div id="pj6" class=" card article-card">
                 <img loading="lazy" class="article-img" src="img/plantas/pj6.jpg" alt="">
                 <h3 class="article-title">Terrace garden</h3>
                 <h2 class="article-price">$48.00</h2>
                 <h3 class="article-append">100 m2</h3>
-                <button onclick="addToCar('pj6')" class="btn">Add to shopping car</button>
+                <button class="btn">Add to shopping car</button>
             </div>
         </div>
     </section>
