@@ -29,11 +29,11 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   background: #38e1b427;
   width: 100vw;
   height: auto;
-  padding: 25px; }
+  padding: 35px; }
   .header .contact-div {
     display: flex; }
     .header .contact-div .contact {
@@ -44,7 +44,9 @@ body {
       margin-left: 2px;
       font-size: 1rem; }
   .header .logo {
-    display: flex; }
+    display: flex;
+    position: absolute;
+    left: 40vw; }
     .header .logo .seed {
       font-size: 1.5rem;
       color: #26893a; }
@@ -55,7 +57,12 @@ body {
     font-size: 1.56rem;
     cursor: pointer;
     transition: 0.4s;
-    color: #136541; }
+    color: #d2ffec;
+    background: #196e77e7;
+    right: 4vw;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed; }
     .header .sh-car:hover {
       opacity: 0.5; }
 
@@ -67,16 +74,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   background: #ffffffd5;
   width: 70vw;
   height: auto;
   max-height: 80vh;
   right: -70vw;
+  overflow-y: auto;
   border-radius: 14px 0px 0px 14px;
-  transition: 1s;
-  overflow: auto; }
+  transition: 1s; }
   #sh-car .top {
     display: flex;
     justify-content: space-evenly;
@@ -110,7 +117,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #abb92a00;
     padding: 20px; }
     #sh-car .bottom .card {
@@ -147,6 +154,13 @@ body {
           color: white;
           justify-self: flex-start;
           align-self: flex-start; }
+        #sh-car .bottom .card .data .article-append {
+          text-align: left;
+          font-size: 0.7rem;
+          display: flex;
+          color: #4b4b4b;
+          justify-self: flex-start;
+          align-self: flex-start; }
       #sh-car .bottom .card i {
         display: flex;
         align-self: flex-start;
@@ -162,6 +176,8 @@ body {
           color: #ef3333d5; }
 
 @media screen and (max-width: 400px) {
+  #sh-car .top .buy {
+    height: 3rem; }
   #sh-car .bottom .card .article-img {
     width: 12vh;
     height: 12vh; } }
